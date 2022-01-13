@@ -8,7 +8,7 @@
 Клонировать репозиторий и перейти в него в командной строке (испольщуем ssh):
 
 ```
-git clone git@github.com:trdMichaelM/api_yamdb.git
+git clone https://github.com/David1804/api_yamdb.git
 ```
 
 ```
@@ -18,16 +18,16 @@ cd api_yamdb
 Cоздать и активировать виртуальное окружение:
 
 ```
-python3 -m venv venv
+python -m venv env (для Windows) или python -m venv venv (для Windows на Mac или Linux)
 ```
 
 ```
-source venv/bin/activate (for Linux)
+source venv/Scripts/activate (для Windows) или source venv/bin/activate (для macOS или Linux)
 ```
 
 Обновить pip до последней версии:
 ```
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
 Установить зависимости из файла requirements.txt:
@@ -46,18 +46,18 @@ pip install djangorestframework_simplejwt
 Выполнить миграции:
 
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 Запустить проект:
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ### Примеры использования API:
 
 ```
-Дитальное описание и примеры работы API проекта представлены в 
+Детальное описание и примеры работы API проекта представлены в 
 документации: http://127.0.0.1:8000/redoc/ в формате ReDoc.
